@@ -134,6 +134,8 @@ var options = {
 	// The default value of this option depends on whether or not a connection was passed to the constructor.
 	// If a connection object is passed to the constructor, the default value for this option is false.
 	endConnectionOnClose: true,
+	// Make touch() a noop to cut down on db writes.
+	disableTouch: false,
 	charset: 'utf8mb4_bin',
 	schema: {
 		tableName: 'sessions',

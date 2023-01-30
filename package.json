@@ -1,21 +1,18 @@
 {
-  "name": "express-mysql-session",
+  "name": "@alexop1000/express-mysql-session",
   "description": "A MySQL session store for express.js",
-  "version": "2.1.8",
+  "version": "2.2.0",
   "main": "index.js",
   "scripts": {
     "test": "npm run test:unit && npm run test:integration",
-    "test:integration": "./node_modules/.bin/mocha test/integration/ --recursive --reporter spec --ui bdd --exit",
-    "test:unit": "./node_modules/.bin/mocha test/unit/ --recursive --reporter spec --ui bdd --exit"
+    "test:integration": "mocha test/integration/ --recursive --reporter spec --ui bdd --exit",
+    "test:unit": "mocha test/unit/ --recursive --reporter spec --ui bdd --exit"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexop1000/express-mysql-session"
+    "url": "git://github.com/alexop1000/express-mysql-session.git"
   },
-  "author": {
-    "name": "Charles Hill",
-    "email": "chill@degreesofzero.com"
-  },
+  "author": "Charles Hill <chill@degreesofzero.com>",
   "license": "MIT",
   "funding": {
     "type": "individual",
@@ -24,7 +21,6 @@
   "dependencies": {
     "debug": "4.3.4",
     "express-session": "1.17.2",
-    "mysql": "2.18.1",
     "mysql2": "3.1.0",
     "underscore": "1.13.3"
   },
@@ -35,8 +31,11 @@
     "mocha": "9.2.2",
     "promise-mysql": "5.1.0"
   },
-  "readmeFilename": "readme.md",
   "bugs": {
-    "url": "https://github.com/chill117/express-mysql-session/issues"
+    "url": "https://github.com/alexop1000/express-mysql-session/issues"
+  },
+  "homepage": "https://github.com/alexop1000/express-mysql-session#readme",
+  "directories": {
+    "test": "test"
   }
 }
