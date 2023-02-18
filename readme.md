@@ -1,4 +1,5 @@
 # express-mysql-session
+## This is an edited version of the [original](https://github.com/chill117/express-mysql-session) library to fix some of the important bugs, like the database being written to every time being read.
 
 A MySQL session store for [express.js](http://expressjs.com/).
 
